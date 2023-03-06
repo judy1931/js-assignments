@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#story {
+  background-image: url("1.png");
+  background-size: cover;
+  height: 800px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+  box-shadow: 10px 10px 10px grey;
+}
