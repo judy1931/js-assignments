@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Robot Adder</title>
+    <link rel="stylesheet" href="robot.css">
+</head>
+<body>
+    <h1>Robot Factory</h1>
+
+    <div id="robot-form">
+        <label for="robot-name">Name:</label>
+        <input type="text" id="robot-name" name="robot-name" required>
+
+        <label for="robot-type">Type:</label>
+        <select id="robot-type" name="robot-type" required>
+            <option value="">Select a type</option>
+            <option value="worker">Worker</option>
+            <option value="security">Security</option>
+            <option value="cleaning">Cleaning</option>
+        </select>
+
+        <label for="robot-image">Image URL:</label>
+        <input type="text" id="robot-image" name="robot-image" required>
+
+        <button onclick="addRobot()" id="add-button">Add Robot</button>
+    </div>
+
+    <div class="robot-lists">
+            <div id="worker-robots">
+                <h2>Worker Robots</h2>
+            </div>
+            <div id="security-robots">
+                <h2>Security Robots</h2>
+            </div>
+            <div id="cleaning-robots">
+                <h2>Cleaning Robots</h2>
+            </div>
+    </div>
+
+    <script src="robot.js"></script>
+</body>
+</html>
