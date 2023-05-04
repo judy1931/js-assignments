@@ -22,19 +22,36 @@
 
         <label for="robot-image">Image URL:</label>
         <input type="text" id="robot-image" name="robot-image" required>
-
         <button onclick="addRobot()" id="add-button">Add Robot</button>
+    </div>
+    <div id="robot-delete-form">
+    <label for="robot-delete">Delete Robot...</label>
+        <input type="text" id="robot-delete" name="robot-delete">
+        <label for="robot-type-delete">Type:</label>
+        <select id="robot-type-delete" name="robot-type-delete" required>
+            <option value="">Select a type</option>
+            <option value="worker">Worker</option>
+            <option value="security">Security</option>
+            <option value="cleaning">Cleaning</option>
+        </select>
+        <button onclick="deleteRobot()" id="delete-button">Delete Robot</button>
+        
     </div>
 
     <div class="robot-lists">
             <div id="worker-robots">
                 <h2>Worker Robots</h2>
+                <div class="show-worker-robots">
+
+                </div>
             </div>
             <div id="security-robots">
                 <h2>Security Robots</h2>
+                <div class="show-security-robots"></div>
             </div>
             <div id="cleaning-robots">
                 <h2>Cleaning Robots</h2>
+                <div class="show-cleaning-robots"></div>
             </div>
     </div>
 
