@@ -368,5 +368,112 @@ function loadSong(){
         div.style.backgroundImage = `url(${url})`;
     }
 }
-
+song1.onended=function(){
+    console.log('playing song2...')
+    song2.load()
+    song3.pause()
+    song2.play()
+    document.querySelector('.playpause').innerHTML = `
+            <i class="fa-solid fa-pause-circle fa-4x" style="color: white;" onclick="playpauseSong()"></i>
+            `
+    document.querySelector('.albumcover').innerHTML = `
+        <img src="eventhorizon.jpeg"/>
+    `
+    document.querySelector('.nowplaying').innerHTML = `
+        Event Horizon
+    `
+    document.querySelector('.artist').innerHTML = `
+        Younha
+    `
+    var url ="eventhorizon.jpeg"
+    var div = document.getElementById("songplayer");
+    div.style.backgroundImage = `url(${url})`;
+    currentTrack=2
+}
+song1.onended=function(){
+    console.log('playing song2...')
+    song2.load()
+    song3.pause()
+    song2.play()
+    document.querySelector('.playpause').innerHTML = `
+            <i class="fa-solid fa-pause-circle fa-4x" style="color: white;" onclick="playpauseSong()"></i>
+            `
+    document.querySelector('.albumcover').innerHTML = `
+        <img src="eventhorizon.jpeg"/>
+    `
+    document.querySelector('.nowplaying').innerHTML = `
+        Event Horizon
+    `
+    document.querySelector('.artist').innerHTML = `
+        Younha
+    `
+    var url ="eventhorizon.jpeg"
+    var div = document.getElementById("songplayer");
+    div.style.backgroundImage = `url(${url})`;
+    currentTrack=2
+}
+song1.onended=function(){
+    console.log('playing song2...')
+    song2.load()
+    song3.pause()
+    song2.play()
+    document.querySelector('.playpause').innerHTML = `
+            <i class="fa-solid fa-pause-circle fa-4x" style="color: white;" onclick="playpauseSong()"></i>
+            `
+    document.querySelector('.albumcover').innerHTML = `
+        <img src="eventhorizon.jpeg"/>
+    `
+    document.querySelector('.nowplaying').innerHTML = `
+        Event Horizon
+    `
+    document.querySelector('.artist').innerHTML = `
+        Younha
+    `
+    var url ="eventhorizon.jpeg"
+    var div = document.getElementById("songplayer");
+    div.style.backgroundImage = `url(${url})`;
+    currentTrack=2
+}
+song2.onended=function(){
+    console.log('playing song3...')
+    song3.load()
+    song3.play()
+    document.querySelector('.playpause').innerHTML = `
+        <i class="fa-solid fa-pause-circle fa-4x" style="color: white;" onclick="playpauseSong()"></i>
+        `
+    document.querySelector('.albumcover').innerHTML = `
+        <img src="springday.jpeg"/>
+    `
+    document.querySelector('.nowplaying').innerHTML = `
+        Spring Day
+    `
+    document.querySelector('.artist').innerHTML = `
+        BTS
+    `
+    var url ="springday.jpeg"
+    var div = document.getElementById("songplayer");
+    div.style.backgroundImage = `url(${url})`;
+}
+song3.onended=function(){
+    console.log('playing song1...')
+    song1.load()
+    song2.pause()
+    song1.play()
+    document.querySelector('.playpause').innerHTML = `
+            <i class="fa-solid fa-pause-circle fa-4x" style="color: white;" onclick="playpauseSong()"></i>
+            `
+    document.querySelector('.albumcover').innerHTML = `
+        <img src="usagain.png"/>
+    `
+    document.querySelector('.nowplaying').innerHTML = `
+        Us, again
+    `
+    document.querySelector('.artist').innerHTML = `
+        Seventeen
+    ` 
+    var url ="usagain.png"
+        var div = document.getElementById("songplayer");
+        div.style.backgroundImage = `url(${url})`;
+        currentTrack=1
+}
 
